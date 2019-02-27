@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+// Color basic
+$orange: #e65f20;
+$rood: #ff0000;
+$blue: #2e8bf4;
+$grey: #737373;
+$green: #4FAB4C;
+
+body {
+  .header {
+    img.topimg {
+      width: 15em;
+      padding: 1em;
+      display: block;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: inline-block;
+      width: 100%;
+
+      .menu {
+        background-color: white;
+        border: 0.03em black solid;
+        display: block;
+        position: absolute;
+        width: 6em;
+        right: 1em;
+        top: 1.5em;
+        padding: 0.4em;
+
+        &::after {
+          content: " ▲";
+          font-size: 0.7em;
+        }
+
+        &:hover::after {
+          content: " ▼";
+        }
+      }
+
+      li {
+        display: none;
+        padding: 1.2em;
+        text-align: center;
+        background-color: $orange;
+        border-bottom: 0.04em solid rgb(251, 191, 157);
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-weight: 500;
+          display: block;
+        }
+      }
+    }
+  }
+
+  div.intro {
+    height: 100vh;
+
+    .welcome {
+      top: 5em;
+    }
+
+    img {
+      display: block;
+      left: 1em;
+      top: -10em;
+      width: 25em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  article {
+    text-align: center;
+    padding: 0.4em;
+
+    h2 {
+      text-align: center;
+      font-weight: 500;
+      padding-bottom: 1.4em;
+    }
+
+    p {
+      padding: 1.5em;
+      color: rgb(97, 97, 97);
+      font-size: 0.8em;
+    }
+  }
+
+  div.blckhght {}
+
+  .svgcontain {
+    width: 10em;
+    padding: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+
+    .svg {
+      display: block;
+      align-items: center;
+      width: 10em;
+    }
+  }
+
+  div.pillars {
+    line-height: 2em;
+    padding: 2em;
+
+    h2,
+    h3,
+    h4 {
+      padding: 2em;
+      text-align: center;
+    }
+
+    ol {
+      font-weight: 900;
+      color: $rood;
+    }
+  }
+div.meldcontain{
+  height:50vh;
+}
+  .contact {
+    background-color: $rood;
+    width: 15em;
+    margin: 2em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border-radius: 4em;
+
+
+    h2 {
+      color: white;
+    }
+  }
+
+  footer {
+    background-color: $blue;
+    height: 50vh;
+
+    ul {
+      color: white;
+      height: 50%;
+    }
+  }
+}
+//
+// // Extra small devices (portrait phones, less than 576px)
+// // No media query for `xs` since this is the default in Bootstrap
+//
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+//
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+//
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+//
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
