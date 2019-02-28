@@ -15,8 +15,17 @@ $grey: #737373;
 $green: #4FAB4C;
 
 body {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-rows: auto;
+    grid-gap:1em;
+  }
+
   .header {
+    grid-column: 1fr;
     img.topimg {
+      grid-row-start: header;
       width: 15em;
       padding: 1em;
       display: block;
@@ -66,6 +75,10 @@ body {
 
   div.intro {
     height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 
     .welcome {
       top: 5em;
@@ -84,6 +97,7 @@ body {
   article {
     text-align: center;
     padding: 0.4em;
+    width: 30em;
 
     h2 {
       text-align: center;
@@ -98,7 +112,19 @@ body {
     }
   }
 
-  div.blckhght {}
+  div.blckhght {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    article {
+      text-align: left;
+
+      li {
+        list-style-type: none;
+      }
+    }
+  }
 
   .svgcontain {
     width: 10em;
@@ -129,9 +155,11 @@ body {
       color: $rood;
     }
   }
-div.meldcontain{
-  height:50vh;
-}
+
+  div.meldcontain {
+    height: 50vh;
+  }
+
   .contact {
     background-color: $rood;
     width: 15em;
@@ -141,7 +169,6 @@ div.meldcontain{
     margin-right: auto;
     padding: 1em;
     border-radius: 4em;
-
 
     h2 {
       color: white;
