@@ -10,5 +10,5 @@ menuKnop.addEventListener('click', function(){
 });
 
 sluitNav.addEventListener('click', function(){
-  navSide.classList.remove('show-nav');
+  navSide.classList.toggle('show-nav');
 });
